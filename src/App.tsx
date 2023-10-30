@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Countdown from "./components/Countdown";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className="hero">
+        <div className="hero__bg hero__bg--1"></div>
+        <div className="hero__bg hero__bg--2"></div>
+        <div className="hero__bg hero__bg--3"></div>
+        <div className="hero__bg hero__bg--4"></div>
+        <div className="hero__content">
+          <h1 className="hero__title">SocialHack</h1>
+          <div className="hero__divider"></div>
+          <h2 className="hero__subtitle">November 23 - 24, 2023</h2>
+          <Countdown />
+        </div>
+      </div>
     </div>
   );
 }
