@@ -4,3 +4,4 @@ version: "3"
 
 tasks:
   dev: npm run start
+  build: npm run build

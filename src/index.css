@@ -14,6 +14,27 @@ body {
   background-color: #5f3c66;
 }
 
+.text {
+  color: #333;
+  background-color: white;
+  max-width: 880px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-sources {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.text p {
+  margin: 16px;
+  max-width: 450px;
+}
+
 p {
   line-height: 1.5;
 }
@@ -147,7 +168,7 @@ code {
 }
 
 .countdown {
-  margin-top: 200px;
+  margin-top: 10vh;
   font-size: 32px;
   font-weight: bold;
 }

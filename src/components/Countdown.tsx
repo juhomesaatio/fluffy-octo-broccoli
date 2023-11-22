@@ -27,16 +27,16 @@ export default function Countdown() {
     <div className="countdown">
       <div className="countdown__time">
         <div className="countdown__item">
-          {diffDays} <div>days</div>
+          {diffDays >= 0 ? diffDays : 0} <div>days</div>
         </div>
         <div className="countdown__item">
-          {diffHours} <div>hours</div>
+          {diffHours >= 0 ? diffHours : 0} <div>hours</div>
         </div>
         <div className="countdown__item">
-          {diffMinutes} <div>minutes</div>
+          {diffMinutes >= 0 ? diffMinutes : 0} <div>minutes</div>
         </div>
         <div className="countdown__item">
-          {diffSeconds} <div>seconds</div>
+          {diffSeconds >= 0 ? diffSeconds : 0} <div>seconds</div>
         </div>
       </div>
     </div>
